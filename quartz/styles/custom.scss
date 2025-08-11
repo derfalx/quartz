@@ -1,3 +1,24 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+/* Indent the 2nd and subsequent lines (hanging indent) of explorer links */
+.explorer-content ul li > a {
+  display: block; /* allow multi-line wrapping within the link */
+  padding-left: 1.25em; /* overall left padding for all lines */
+  text-indent: -1em; /* pull first line back so subsequent lines appear indented */
+}
+
+.explorer-content ul li > a::before {
+  content: "• ";
+}
+
+// put your custom CSS here!
+li.recent-li {
+  h3 {
+    line-height: 1.2rem;
+    font-size:0.9rem;
+  }
+  .meta {
+    font-size: 0.8rem;
+  }
+}
